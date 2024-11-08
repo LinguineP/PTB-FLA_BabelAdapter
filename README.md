@@ -17,5 +17,5 @@ After cloning the repo, possition yourself within project directory:
 4. Proceed to the startup of PTB-FLA applications
 
 * * _Requires maven installed_
-* ** _First Application instance should be ran with `java -jar .\target\PTBFLA-Babel-adapter-0.0.6.jar babel.address=<your_device_ip> HyParView.Contact=none`_ (PTB)
+* ** _First Application instance should be ran with `java -jar .\target\PTBFLA-Babel-adapter-0.0.6.jar babel.address=<your_device_ip> HyParView.Contact=none`_ 
 * *** _If some of the ports are occupied when starting the adapter exit it  and tun it again and it should work_
