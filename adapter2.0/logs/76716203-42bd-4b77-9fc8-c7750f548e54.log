@@ -1,0 +1,5 @@
+2025-06-11 15:14:34.144 [1000-ptbflaAdapter] WARN  pt.unl.fct.di.novasys.babel.core.GenericProtocol - Discarding unexpected reply (id 601): pt.unl.fct.di.novasys.babel.protocols.storage.replies.CreateKeySpaceReply@7cad32c0
+2025-06-11 15:14:34.155 [1000-ptbflaAdapter] WARN  pt.unl.fct.di.novasys.babel.core.GenericProtocol - Discarding unexpected reply (id 602): pt.unl.fct.di.novasys.babel.protocols.storage.replies.CreateCollectionReply@53782651
+2025-06-11 15:14:34.899 [main] WARN  Main - Server started on http://192.168.1.121:8080/
+2025-06-11 15:14:51.716 [1000-ptbflaAdapter] WARN  pt.unl.fct.di.novasys.babel.core.GenericProtocol - Discarding unexpected reply (id 608): pt.unl.fct.di.novasys.babel.protocols.storage.replies.ExecuteStatusReply@3b5d975e
+2025-06-11 15:16:01.906 [Thread-11] WARN  Main - Server stopped!

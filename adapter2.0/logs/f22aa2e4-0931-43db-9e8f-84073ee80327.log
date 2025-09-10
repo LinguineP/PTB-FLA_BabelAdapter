@@ -1,0 +1,6 @@
+2025-06-11 16:33:07.661 [main] WARN  Main - Server started on http://192.168.1.121:8080/
+2025-06-11 16:33:56.019 [32500-BabelMulticastDiscovery] ERROR pt.unl.fct.di.novasys.babel.core.protocols.discovery.LocalDiscoveryProtocol - Could not send announcements.
+2025-06-11 16:33:57.020 [32500-BabelMulticastDiscovery] ERROR pt.unl.fct.di.novasys.babel.core.protocols.discovery.LocalDiscoveryProtocol - Could not send announcements.
+2025-06-11 16:33:58.020 [32500-BabelMulticastDiscovery] ERROR pt.unl.fct.di.novasys.babel.core.protocols.discovery.LocalDiscoveryProtocol - Could not send announcements.
+2025-06-11 16:33:59.021 [32500-BabelMulticastDiscovery] ERROR pt.unl.fct.di.novasys.babel.core.protocols.discovery.LocalDiscoveryProtocol - Could not send announcements.
+2025-06-11 16:33:59.353 [Thread-11] WARN  Main - Server stopped!

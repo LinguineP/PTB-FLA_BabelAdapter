@@ -1,0 +1,2 @@
+2025-07-08 08:33:55.200 [TCPChannel-1-1] ERROR pt.unl.fct.di.novasys.channel.tcp.TCPChannel - Server socket bind failed: io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Address already in use
+2025-07-08 08:33:55.210 [TCPChannel-5-1] ERROR pt.unl.fct.di.novasys.channel.tcp.TCPChannel - Server socket bind failed: io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Address already in use

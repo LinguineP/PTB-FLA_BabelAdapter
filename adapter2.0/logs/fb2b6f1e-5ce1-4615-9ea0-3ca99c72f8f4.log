@@ -1,0 +1,11 @@
+2025-06-10 10:31:35.348 [main] WARN  Main - Server started on http://192.168.1.121:8080/
+2025-06-10 10:31:39.300 [750-Nimbus] ERROR pt.unl.fct.di.novasys.babel.core.GenericProtocol - Unhandled exception in protocol Nimbus (750) pt.unl.fct.di.novasys.babel.exceptions.NoSuchProtocolException: 1000 not executing.Executing protocols: [1600 - EagerPushGossipBroadcast, 1666 - Membership-Monitor, 32500 - BabelMulticastDiscovery, 760 - PartialAntiEntropyPush, 1400 - HyParView, 1900 - AntiEntrophy, 750 - Nimbus, 2398 - RandomTour, 751 - PartialMetadataGossip, 9999 - TaRDIS Simple App, ]
+pt.unl.fct.di.novasys.babel.exceptions.NoSuchProtocolException: 1000 not executing.Executing protocols: [1600 - EagerPushGossipBroadcast, 1666 - Membership-Monitor, 32500 - BabelMulticastDiscovery, 760 - PartialAntiEntropyPush, 1400 - HyParView, 1900 - AntiEntrophy, 750 - Nimbus, 2398 - RandomTour, 751 - PartialMetadataGossip, 9999 - TaRDIS Simple App, ]
+	at pt.unl.fct.di.novasys.babel.core.Babel.sendIPC(Babel.java:633) ~[nimbus-presentation.jar:?]
+	at pt.unl.fct.di.novasys.babel.core.GenericProtocol.sendReply(GenericProtocol.java:1170) ~[nimbus-presentation.jar:?]
+	at pt.unl.fct.di.novasys.nimbus.Nimbus.create(Nimbus.java:853) ~[nimbus-presentation.jar:?]
+	at pt.unl.fct.di.novasys.nimbus.Nimbus.uponExecuteRequest(Nimbus.java:447) ~[nimbus-presentation.jar:?]
+	at pt.unl.fct.di.novasys.babel.core.GenericProtocol.handleRequest(GenericProtocol.java:1551) ~[nimbus-presentation.jar:?]
+	at pt.unl.fct.di.novasys.babel.core.GenericProtocol.mainLoop(GenericProtocol.java:1479) ~[nimbus-presentation.jar:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+2025-06-10 10:36:19.952 [Thread-11] WARN  Main - Server stopped!

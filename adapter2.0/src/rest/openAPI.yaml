@@ -1,0 +1,77 @@
+openapi: 3.0.3
+info:
+  title: Adapter REST API
+  version: 1.0.0
+  description: API for handling Adapter messages, visibility models, and membership updates.
+
+servers:
+  - url: http://{interface_ip}:8080/rest
+    variables:
+      interface_ip:
+        default: localhost
+        description: IP address of the interface hosting the service
+
+paths:
+  /adapter/messages:
+    post:
+      summary: Send adapter message
+      operationId: addNode
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AdapterMessage'
+      responses:
+        '200':
+          description: Message accepted
+          content:
+            text/plain:
+              schema:
+                type: string
+
+  /adapter/visibilityModel:
+    post:
+      summary: Start a new visibility model timeslot
+      operationId: startNewTimeslot
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AdapterMessage'
+      responses:
+        '200':
+          description: Timeslot started
+          content:
+            text/plain:
+              schema:
+                type: string
+
+  /adapter/membership:
+    post:
+      summary: Confirm membership update
+      operationId: membershipConfirmation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AdapterMessage'
+      responses:
+        '200':
+          description: Membership updated
+          content:
+            text/plain:
+              schema:
+                type: string
+
+components:
+  schemas:
+    AdapterMessage:
+      type: object
+      description: Data model for Adapter messages
+      # You should fill in the actual fields here
+      properties:
+        exampleField:
+          type: string

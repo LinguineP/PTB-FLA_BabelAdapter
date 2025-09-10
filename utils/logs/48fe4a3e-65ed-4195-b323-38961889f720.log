@@ -1,0 +1,1 @@
+2025-09-10 08:58:43.519 [main] ERROR pt.unl.fct.di.novasys.babel.utils.NetworkingUtilities - No interface named {'friendly_name': 'Wi-Fi', 'guid': '{86987FD2-BA6E-4CA9-97F5-F2D780CAF8AB}', 'if_index': None}

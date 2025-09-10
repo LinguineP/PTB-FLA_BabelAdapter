@@ -1,0 +1,12 @@
+2025-09-10 09:15:32.853 [main] WARN  org.eclipse.jetty.server.Server - Unable to build server URI
+java.net.URISyntaxException: Illegal character in hostname at index 9: http://pv_t480s:8080/
+	at java.net.URI$Parser.fail(URI.java:2995) ~[?:?]
+	at java.net.URI$Parser.parseHostname(URI.java:3547) ~[?:?]
+	at java.net.URI$Parser.parseServer(URI.java:3394) ~[?:?]
+	at java.net.URI$Parser.parseAuthority(URI.java:3304) ~[?:?]
+	at java.net.URI$Parser.parseHierarchical(URI.java:3240) ~[?:?]
+	at java.net.URI$Parser.parse(URI.java:3196) ~[?:?]
+	at java.net.URI.<init>(URI.java:732) ~[?:?]
+	at org.eclipse.jetty.server.Server.getURI(Server.java:751) [gmv-uc-adapter.jar:?]
+	at Main.main(Main.java:122) [gmv-uc-adapter.jar:?]
+2025-09-10 09:15:32.865 [main] WARN  Main - Server started on null

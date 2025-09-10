@@ -1,0 +1,2 @@
+2025-06-10 09:17:13.198 [2398-RandomTour] WARN  pt.unl.fct.di.novasys.babel.core.GenericProtocol - Discarding unexpected notification (id 1): pt.unl.fct.di.novasys.babel.internal.NotificationEvent@577a1257
+2025-06-10 09:17:13.650 [main] WARN  Main - Server started on http://192.168.1.43:8080/

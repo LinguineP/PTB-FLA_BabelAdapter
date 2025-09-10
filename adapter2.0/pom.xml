@@ -1,0 +1,150 @@
+<project xmlns="https://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>pt.unl.fct.di.novasys</groupId>
+	<artifactId>GMV-UC-adapter</artifactId>
+	<version>0.1.0</version>
+	<name>GMV-UC-adapter</name>
+
+	<description>GMV usecase adapter</description>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.release>21</maven.compiler.release>
+	</properties>
+
+
+	<build>
+		<finalName>gmv-uc-adapter</finalName>
+		<testSourceDirectory>src/tests</testSourceDirectory>
+		<sourceDirectory>src</sourceDirectory>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.12.1</version>
+				<configuration>
+					<source>21</source>
+					<target>21</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<appendAssemblyId>false</appendAssemblyId>
+					<archive>
+						<manifest>
+							<mainClass>Main</mainClass>
+						</manifest>
+					</archive>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id> <!-- this is used for inheritance
+						merges -->
+						<phase>package</phase> <!-- bind to the packaging phase -->
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>3.0.2</version>
+				<configuration>
+					<resources>
+						<resource>
+							<directory>resources</directory>
+						</resource>
+						<resource>
+							<directory>web</directory>
+						</resource>
+					</resources>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<repositories>
+
+		<repository>
+			<id>novasys-mvn</id>
+			<url>https://novasys.di.fct.unl.pt/packages/mvn</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+
+
+		<dependency>
+			<groupId>pt.unl.fct.di.novasys.babel</groupId>
+			<artifactId>hyparview-discovery</artifactId>
+			<version>0.1.20</version>
+		</dependency>
+
+		
+
+		<dependency>
+			<groupId>pt.unl.fct.di.novasys.babel</groupId>
+			<artifactId>babel-webservices</artifactId>
+			<version>[0.0.2,)</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.github.javafaker</groupId>
+			<artifactId>javafaker</artifactId>
+			<version>1.0.2</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>33.1.0-jre</version>
+		</dependency>
+
+		<dependency>
+			<groupId>pt.unl.fct.di.novasys.babel.utils</groupId>
+			<artifactId>membership-monitor-j21</artifactId>
+			<version>[0.0.6,)</version>
+		</dependency>
+		<dependency>
+			<groupId>pt.unl.fct.di.novasys.babel</groupId>
+			<artifactId>babel-protocol-eagerpushgossip-j21</artifactId>
+			<version>[1.1.4,)</version>
+		</dependency>
+		<dependency>
+			<groupId>pt.unl.fct.di.novasys.babel</groupId>
+			<artifactId>babel-protocol-antientropy-j21</artifactId>
+			<version>[0.1.4,)</version>
+		</dependency>
+		<dependency>
+			<groupId>pt.unl.fct.di.novasys.babel.utils</groupId>
+			<artifactId>random-tour</artifactId>
+			<version>[1.0.2,)</version>
+		</dependency>
+		<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-core</artifactId>
+		<version>2.16.1</version>
+		</dependency>
+		<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-databind</artifactId>
+		<version>2.16.1</version>
+		</dependency>
+		<dependency>
+		<groupId>com.fasterxml.jackson.core</groupId>
+		<artifactId>jackson-annotations</artifactId>
+		<version>2.16.1</version>
+		</dependency>
+
+	</dependencies>
+</project>

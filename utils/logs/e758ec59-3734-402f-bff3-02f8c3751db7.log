@@ -1,0 +1,2 @@
+2025-09-10 08:51:27.321 [main] ERROR pt.unl.fct.di.novasys.babel.utils.NetworkingUtilities - No interface named None
+2025-09-10 08:51:27.580 [TCPChannel-1-1] ERROR pt.unl.fct.di.novasys.channel.tcp.TCPChannel - Server socket bind failed: java.net.BindException: Cannot assign requested address: bind

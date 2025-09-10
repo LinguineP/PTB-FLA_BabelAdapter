@@ -1,0 +1,1 @@
+2025-06-23 11:02:46.807 [TCPChannel-1-1] ERROR pt.unl.fct.di.novasys.channel.tcp.TCPChannel - Server socket bind failed: io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Cannot assign requested address

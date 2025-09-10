@@ -1,0 +1,11 @@
+[Unit]
+Description=Nimbus Demonstration
+After=syslog.target
+After=network-online.target
+[Service]
+User=<USER>
+WorkingDirectory=/home/<USER>/swarmNimbus-logs
+ExecStart=/usr/bin/java -DlogFileName=<HOST> -jar /home/<USER>/sample-applications/Presentation-App/target/nimbus-presentation.jar application.autonomous=<AUTONOMOUS> application.testing=false application.opInterval=3000 babel.interface=wlan0 webservice.resourcePath=/home/<USER>/sample-applications/Presentation-App/web <DISCOVERY>
+SuccessExitStatus=143
+[Install]
+WantedBy=multi-user.target

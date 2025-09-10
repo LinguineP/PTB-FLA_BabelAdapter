@@ -1,0 +1,30 @@
+This folder contains the script and config file to install a service in a raspberry
+named 'swarm' that creates and enables the simple use case as a service.
+
+The configuration script must be executed as sudo, it assumes bash, and it has two
+arguments the first is mandadory and the second is optional:
+
+1. The username underwhich this repository was cloned. The repository must be cloned
+to the root of the home directory of the user.
+2. A flag with value either 'leader' or 'follower', with default value 'follower'. 
+Only the first node should be installed with the tag leager as this will disable the
+process to conduct multicast discovery for a contact to introuce this node to the
+swarm. All other nodes should be follower, that will enable discovery of a contact
+point through multicast.
+
+Examples of usage:
+
+Leader:
+
+sudo ./install.sh jleitao leader
+
+Follower:
+
+sudo ./install.sh jleitao
+
+There is also a script to uninstall the service (if it exists) that must be executed
+as root. This script does not take any arguments.
+
+Example of usage:
+
+sudo ./uninstall.sh

@@ -1,0 +1,4 @@
+2025-06-11 15:55:51.615 [main] WARN  Main - Server started on http://192.168.1.121:8080/
+2025-06-11 15:56:24.690 [1000-ptbflaAdapter] WARN  pt.unl.fct.di.novasys.babel.core.GenericProtocol - Discarding unexpected reply (id 608): pt.unl.fct.di.novasys.babel.protocols.storage.replies.ExecuteStatusReply@37925f2f
+2025-06-11 15:57:07.003 [1000-ptbflaAdapter] WARN  pt.unl.fct.di.novasys.babel.core.GenericProtocol - Discarding unexpected reply (id 608): pt.unl.fct.di.novasys.babel.protocols.storage.replies.ExecuteStatusReply@7290d7b9
+2025-06-11 16:00:22.666 [Thread-11] WARN  Main - Server stopped!
